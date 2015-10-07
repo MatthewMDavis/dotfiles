@@ -1,0 +1,1 @@
+/Users/Matt/.yadr/zsh/prezto/runcoms/zlogin

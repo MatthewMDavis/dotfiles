@@ -1,0 +1,10 @@
+" Swiki - Simple wiki managed by Vim
+
+Bundle "christoomey/vim-swiki"
+
+let g:swiki_root = "~/wiki"
+
+nmap <leader>wki :call OpenWikiIndex()<cr>
+nmap <leader>wkc :CtrlP ~/Dropbox/wiki<cr>
+
+" vim:ft=vim
