@@ -7,7 +7,8 @@ catch
     " No colors for me
 endtry
 
-colorscheme jellybeans
+colorscheme solarized
+
 if has('gui_running')
     set guioptions-=r "Hide the right side scrollbar
     set guioptions-=L "Hide the left side scrollbar
