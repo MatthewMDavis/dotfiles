@@ -31,7 +31,7 @@ let g:SuperTabCrMapping                = 0
 "----------------------------------------
 
 Bundle 'SirVer/ultisnips'
-
+Bundle 'honza/vim-snippets'
 let g:UltiSnipsSnippetsDir='~/.vim/snippets'
 let g:UltiSnipsEditSplit='vertical'
 let g:UltiSnipsExpandTrigger           = '<tab>'
