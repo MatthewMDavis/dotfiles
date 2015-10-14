@@ -1,0 +1,8 @@
+" YankStack: super-lightwt yankring implementation
+
+Bundle 'maxbrunsfeld/vim-yankstack'
+
+call yankstack#setup()
+nmap Y y$
+  
+" vim:ft=vim

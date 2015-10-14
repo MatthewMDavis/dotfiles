@@ -1,4 +1,4 @@
-" VTR - Vim tmux integration
+"Vim-Tmux-Runner - Vim tmux integration
 
 Bundle "christoomey/vim-tmux-runner"
 
@@ -6,12 +6,13 @@ let g:VtrUseVtrMaps = 1
 let g:VtrGitCdUpOnOpen = 0
 let g:VtrPercentage = 30
 
-nmap <leader>fs :VtrFlushCommand<cr>:VtrSendCommandToRunner<cr>
-nmap <C-f> :VtrSendLinesToRunner<cr>
-vmap <C-f> :VtrSendLinesToRunner<cr>
+nmap <leader>sr :VtrFlushCommand<cr>:VtrSendCommandToRunner<cr>
+nmap <C-t> :VtrSendLinesToRunner<cr>
+vmap <C-t> :VtrSendLinesToRunner<cr>
 
-nmap <leader>osr :VtrOpenRunner { 'orientation': 'h', 'percentage': 50 }<cr>
-nmap <leader>opr :VtrOpenRunner { 'orientation': 'h', 'percentage': 50, 'cmd': 'pry' }<cr>
+nmap <leader>osr :VtrOpenRunner<cr> 
+nmap <leader>opr :VtrOpenRunner { 'cmd': 'pry' }<cr> 
+nmap <leader>gnp :VtrAttachToPane<cr> 
 
 nnoremap <leader>sd :VtrSendCtrlD<cr>
 nnoremap <leader>sq :VtrSendCommandToRunner q<cr>

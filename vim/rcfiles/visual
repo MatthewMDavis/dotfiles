@@ -1,12 +1,14 @@
 " Visual configurations
 "------------------------
-
+Bundle "sjl/vitality.vim"
 try
     Bundle "christoomey/vim-colors-ctoomey"
+
 catch
     " No colors for me
 endtry
 
+let g:vitality_tmux_can_focus = 1
 colorscheme solarized
 
 if has('gui_running')
@@ -28,6 +30,7 @@ if has('gui_running')
     " MacVim is very pretty
     if has('gui_macvim')
         " set transparency=8
+        set macmeta
 
         " Fullscreen options
         set fuoptions=maxvert
@@ -43,7 +46,10 @@ if has('gui_running')
         endif
     endif
 else
-    set nocursorline nocursorcolumn
+    au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * setlocal cursorline
+    au WinLeave,FocusLost,CmdwinLeave * setlocal nocursorline
+    highlight clear SignColumn
+    highlight clear LineNr
 endif
 
 set textwidth=80
@@ -57,13 +63,13 @@ nnoremap <C-_> <C-w>_
 set splitbelow
 
 " Use line cursor in insert mode, block in normal (only in tmux)
-if exists('$TMUX')
-    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
+" if exists('$TMUX')
+"     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+"     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+" else
+"     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+"     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+" endif
 
 " List out the syntax for the word under the cursor
 function! s:SyntaxGroup()
