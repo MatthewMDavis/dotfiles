@@ -7,8 +7,8 @@ let g:VtrGitCdUpOnOpen = 0
 let g:VtrPercentage = 30
 
 nmap <leader>sr :VtrFlushCommand<cr>:VtrSendCommandToRunner<cr>
-nmap <C-t> :VtrSendLinesToRunner<cr>
-vmap <C-t> :VtrSendLinesToRunner<cr>
+nmap <C-=> :VtrSendLinesToRunner<cr>
+vmap <C-=> :VtrSendLinesToRunner<cr>
 
 nmap <leader>osr :VtrOpenRunner<cr> 
 nmap <leader>opr :VtrOpenRunner { 'cmd': 'pry' }<cr> 

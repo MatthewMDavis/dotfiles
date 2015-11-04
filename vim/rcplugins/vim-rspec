@@ -2,7 +2,7 @@
 
 Bundle 'thoughtbot/vim-rspec'
 "Rspec Key Bindings
-let g:rspec_command = "call VtrSendCommand('bundle exec rspec {spec}')"
+let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
 map <Leader>fs :call RunCurrentSpecFile()<CR>
 map <Leader>ts :call RunNearestSpec()<CR>
 map <Leader>ls :call RunLastSpec()<CR>

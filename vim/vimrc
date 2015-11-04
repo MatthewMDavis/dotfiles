@@ -1,15 +1,15 @@
-"===========================================================================
-"                                ~My vimrc~
-"===========================================================================
-" Author:        Chris Toomey [http://ctoomey.com]
-" Source:        https://github.com/christoomey/dotfiles
-"
-" My vimrc, mostly for rails & javascript development. I have organized
-" all of my vimrc style configurations into individual files organized
-" by functionality. These live in ~/.vim/rcfiles.
-"
-" I am using Vundle to manage my plugins, which is configured below
-" Each plugin is configured in its own file in ~/.vim/rcplugins
+"=========================================================================== "
+" ~My vimrc~
+"=========================================================================== "
+" Author:        Matt Davis 
+" 
+" 
+" I stole the living hell out of this .vimrc.
+" All credit goes to Chris Toomey, a guy who figured out how to organize a vim
+" workflow that really made sense to me, and who had the good sense to bust
+" everything out into separate config files, organized by topic. I deleted some
+" stuff, actually made one or two changes that I could consider improvements,
+" made my own leader keys, etc. But Chris Toomey is that guy.
 "---------------------------------------------------------------------
 
 " Want to set this before any others

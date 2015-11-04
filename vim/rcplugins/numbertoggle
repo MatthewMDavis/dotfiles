@@ -1,0 +1,7 @@
+" Allow automatic, and simple manual, toggling of relative/hybrid line numbering
+
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+
+let g:NumberToggleTrigger="<F6>"
+
+" vim:ft=vim

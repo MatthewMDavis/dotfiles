@@ -53,23 +53,15 @@ else
 endif
 
 set textwidth=80
-set colorcolumn=+1,+2,+3,+4
-
+set colorcolumn=+1
+hi VertSplit ctermbg=NONE guibg=NONE
 set vb
 
 " Easy access to maximizing
 nnoremap <C-_> <C-w>_
 
 set splitbelow
-
-" Use line cursor in insert mode, block in normal (only in tmux)
-" if exists('$TMUX')
-"     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-"     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-" else
-"     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-"     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-" endif
+set splitright
 
 " List out the syntax for the word under the cursor
 function! s:SyntaxGroup()

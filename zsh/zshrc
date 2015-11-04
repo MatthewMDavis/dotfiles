@@ -1,9 +1,5 @@
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-
-# Activate Powerline prompt
-# . /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 export EDITOR=/usr/local/bin/vim
 
@@ -13,9 +9,41 @@ export EDITOR=/usr/local/bin/vim
 # time that oh-my-zsh is loaded.
 ZSH_THEME="crunch"
 
+setopt auto_cd
+
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconf="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# Paths
+#
+
+typeset -gU cdpath fpath mailpath path
+
+# Set the the list of directories that cd searches.
+cdpath=(
+  /Users/Matt/bin
+  /Users/Matt/Projects
+  $cdpath
+)
+
+ path=(
+    /Users/Matt/bin
+    $path
+   )
+
+########################
+# Set up ubiquitous tmux
+########################
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+
+ensure_tmux_is_running
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -45,8 +73,8 @@ ZSH_THEME="crunch"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler brew gem heroku rbenv pyenv sublime vi-mode tmux)
+# Example format: plugins=(rails git sublime ruby lighthouse)
+plugins=(git bundler brew gem heroku thefuck rbenv pyenv sublime vi-mode tmux)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
@@ -65,6 +93,3 @@ function ql() {
 }
 alias tmux="TERM=screen-256color-bce tmux"
 alias rake="noglob bundled_rake"
-
-eval "$(direnv hook zsh)"
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
