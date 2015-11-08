@@ -74,7 +74,7 @@ ensure_tmux_is_running
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git sublime ruby lighthouse)
-plugins=(git bundler brew gem heroku thefuck rbenv pyenv sublime vi-mode tmux)
+plugins=(git bundler brew gem heroku thefuck rbenv pyenv sublime vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
@@ -93,3 +93,5 @@ function ql() {
 }
 alias tmux="TERM=screen-256color-bce tmux"
 alias rake="noglob bundled_rake"
+
+eval "$(direnv hook zsh)"
