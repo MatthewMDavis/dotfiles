@@ -4,14 +4,16 @@ Bundle 'thoughtbot/vim-rspec'
 "Rspec Key Bindings
 let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
 let s:docker = 0
-nnoremap <F9> :call ToggleRspecMode()<CR>
+nnoremap <F5> :call ToggleRspecMode()<CR>
 function! ToggleRspecMode()
   if s:docker
     let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
     let s:docker = 0
+    echo "Standard RSpec runner set."
   else
     let g:rspec_command = "call VtrSendCommand('docker run web bundle exec rspec {spec}')"
     let s:docker = 1
+    echo "Docker RSpec runner set."
   endif
 endfunction
 map <Leader>fs :call RunCurrentSpecFile()<CR>
