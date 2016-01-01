@@ -1,0 +1,11 @@
+"Assign to vim-tmux-runner for testing
+
+let test#strategy = "vtr"
+
+"Configure leader keys for vim-test plugin
+
+nmap <silent> <leader>ts :TestNearest<CR>
+nmap <silent> <leader>fs :TestFile<CR>
+nmap <silent> <leader>as :TestSuite<CR>
+nmap <silent> <leader>ls :TestLast<CR>
+nmap <silent> <leader>gs :TestVisit<CR>

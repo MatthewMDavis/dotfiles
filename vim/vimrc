@@ -1,7 +1,7 @@
 "=========================================================================== "
 " ~My vimrc~
 "=========================================================================== "
-" Author:        Matt Davis 
+" Author:        Matt Davis
 "---------------------------------------------------------------------
 
 " Want to set this before any others
@@ -46,6 +46,9 @@ Plug 'tpope/vim-commentary'
 
 " Ctrlp - Vimscript fuzzy file opener
 Plug 'kien/ctrlp.vim'
+
+" DelimitMate - Puts matching closing tokens into code while you type
+Plug 'Raimondi/delimitMate'
 
 " easy align - Align by motion for tables and other structured content
 Plug 'junegunn/vim-easy-align'
@@ -155,6 +158,9 @@ Plug 'tpope/vim-rbenv'
 " vim-ruby: part of vim distribution, but having as separate bundle advised
 Plug 'vim-ruby/vim-ruby'
 
+" vim-test: multi-platform testing dispatcher
+Plug 'janko-m/vim-test'
+
 " vinegar is tim pope's netrw replacement
 Plug 'tpope/vim-vinegar'
 
@@ -167,12 +173,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 " Completion functionality, unifying supertab, ultisnips, and YouCompleteMe
 " via http://stackoverflow.com/a/22253548/1626737
 
-function! BuildYCM(info)
-  if a:info.status == 'installed' || a:info.force
-    !./install.sh
-  endif
-endfunction
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'Valloric/YouCompleteMe'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'

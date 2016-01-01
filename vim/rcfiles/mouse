@@ -11,3 +11,4 @@ if !has('nvim')
   set ttymouse=xterm
 endif
 " }}}
+" vim:ft=vim

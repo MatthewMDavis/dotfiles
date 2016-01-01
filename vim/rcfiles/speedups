@@ -1,7 +1,7 @@
 " Speedup configurations
 "------------------------
 
-" Quick toggle between two files
+"quick toggle between two files
 nnoremap <leader><leader> <C-^>
 
 " Use j/k to start, then scroll through autocomplete options
@@ -27,7 +27,7 @@ set wildmenu
 set wildmode=list:longest,full
 set wildignore+=*.pyc
 
-" Easy re-sourcing of vimrc
+" Easy re-sourcing of vimrc files
 map <leader>sop :source %<cr>
 
 " Doesn't seem I'm going to win on this one
@@ -39,6 +39,7 @@ function! CurrenRelativeDirectory()
 endfunction
 
 " Easy navigation for editing and cding
+nnoremap <Leader>rc :e $MYVIMRC
 nmap <Leader>ec :e ~/code/
 nmap <Leader>eh :e ~/
 nmap <Leader>ew :CtrlP ~/wiki<cr>
