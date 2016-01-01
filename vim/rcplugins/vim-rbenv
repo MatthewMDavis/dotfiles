@@ -1,6 +1,0 @@
-" vim-rbenv lets vim know where my ruby installs are
-
-Bundle 'tpope/vim-rbenv'
-
-
-" vim:ft=vim

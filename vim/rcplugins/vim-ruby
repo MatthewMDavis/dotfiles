@@ -1,6 +1,0 @@
-" vim-ruby: part of vim distribution, but having as separate bundle advised
-
-Bundle 'vim-ruby/vim-ruby'
-
-
-" vim:ft=vim

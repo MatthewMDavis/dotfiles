@@ -1,6 +1,0 @@
-" vinegar is tim pope's netrw replacement
-
-Bundle 'tpope/vim-vinegar'
-
-
-" vim:ft=vim

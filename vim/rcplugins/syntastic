@@ -1,7 +1,5 @@
 " Syntastic - Syntax checking on the fly
 
-Bundle 'scrooloose/syntastic'
-
 nmap <silent> <leader>sy :SyntasticToggleMode<cr>
 
 let g:syntastic_xml_checkers = []

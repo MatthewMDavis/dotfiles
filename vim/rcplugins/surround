@@ -1,7 +1,5 @@
 " Surround - Add, update, remove enclosing marks, ie [], {}. (), "", ''
 
-Bundle "tpope/vim-surround"
-
 let [s:single_quote, s:double_quote, s:no_match] = [1,2,0]
 function! SurroundRequote()
     let matched_quote = s:no_match

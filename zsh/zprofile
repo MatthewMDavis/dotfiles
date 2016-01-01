@@ -62,4 +62,4 @@ if [[ -z $TMUX ]]; then
  if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
  # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 fi
-eval "$(docker-machine env default)"
+# eval "$(docker-machine env default)"

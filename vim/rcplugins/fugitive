@@ -1,7 +1,5 @@
 " Fugitive - Interact with git via Vim
 
-Bundle "tpope/vim-fugitive"
-
 nmap <LEADER>st :call <sid>SaveSessionAndShowGitStatus()<cr>
 nmap <LEADER>ST :call <sid>RestoreSession()<cr>
 nmap <LEADER>gd :Gdiff<cr>

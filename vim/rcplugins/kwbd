@@ -1,0 +1,5 @@
+" KWBD - Close buffer while preserving window layout
+
+nnoremap <leader>bd :Kwbd<cr>
+
+" vim:ft=vim

@@ -1,7 +1,5 @@
 " Ack - Integrata ack (grep replacement) into vim
 
-Bundle "mileszs/ack.vim"
-
 nmap <LEADER>ck :Ack!<space>
 nmap <LEADER>cK :Ack!<up><cr>
 nmap <LEADER>CK :Ack!<up><cr>

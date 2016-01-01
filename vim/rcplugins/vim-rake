@@ -1,6 +1,0 @@
-" vim-rake: configures vim path to allow file navigation of ruby gems
-
-Bundle 'tpope/vim-rake'
-
-
-" vim:ft=vim

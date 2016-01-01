@@ -16,7 +16,6 @@ set softtabstop=2               "     specific settings via autocmd
 set secure                      " Limit what modelines and autocmds can do
 set autowrite                   " write for me when I take any action
 set timeoutlen=3000
-
 set relativenumber
 
 " Disable sound/visual bell on errors

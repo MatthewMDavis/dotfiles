@@ -1,18 +1,16 @@
 "Vim-Tmux-Runner - Vim tmux integration
 
-Bundle "christoomey/vim-tmux-runner"
-
 let g:VtrUseVtrMaps = 1
 let g:VtrGitCdUpOnOpen = 0
 let g:VtrPercentage = 30
 
-nmap <leader>sr :VtrFlushCommand<cr>:VtrSendCommandToRunner<cr>
-nmap <C-=> :VtrSendLinesToRunner<cr>
-vmap <C-=> :VtrSendLinesToRunner<cr>
+nmap <leader>sfc :VtrFlushCommand<cr>:VtrSendCommandToRunner<cr>
+nmap <leader>sr :VtrSendLinesToRunner<cr>
+vmap <leader>sr :VtrSendLinesToRunner<cr>
 
-nmap <leader>osr :VtrOpenRunner<cr> 
-nmap <leader>opr :VtrOpenRunner { 'cmd': 'pry' }<cr> 
-nmap <leader>gnp :VtrAttachToPane<cr> 
+nmap <leader>osr :VtrOpenRunner<cr>
+nmap <leader>opr :VtrOpenRunner { 'cmd': 'pry' }<cr>
+nmap <leader>gnp :VtrAttachToPane<cr>
 
 nnoremap <leader>sd :VtrSendCtrlD<cr>
 nnoremap <leader>sq :VtrSendCommandToRunner q<cr>

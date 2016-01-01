@@ -1,7 +1,5 @@
 " vim-es6: snippets and syntax highlighting for ECMAScript6/ECMAScript2015
 
-Bundle 'vim-scripts/vim-es6'
-
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " vim:ft=vim

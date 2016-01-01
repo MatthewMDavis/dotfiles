@@ -1,12 +1,5 @@
 " Visual configurations
 "------------------------
-Bundle "sjl/vitality.vim"
-try
-    Bundle "christoomey/vim-colors-ctoomey"
-
-catch
-    " No colors for me
-endtry
 
 let g:vitality_tmux_can_focus = 1
 colorscheme solarized

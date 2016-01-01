@@ -95,3 +95,5 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias rake="noglob bundled_rake"
 
 eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

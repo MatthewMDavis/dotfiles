@@ -1,7 +1,5 @@
 " Easy Buffer - Buffer list
 
-Bundle "troydm/easybuffer.vim"
-
 nnoremap <leader>be :EasyBufferHorizontal<cr>
 
 autocmd FileType easybuffer call s:EasyBufferSettings()

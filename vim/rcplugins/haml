@@ -1,5 +1,3 @@
-" Haml - Syntax support for haml & sass
 
-Bundle "tpope/vim-haml"
 
 " vim:ft=vim
