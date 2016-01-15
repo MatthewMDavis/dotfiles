@@ -1,0 +1,10 @@
+" Colors for the lines indicating indentation levels
+
+" Vim
+let g:indentLine_color_term = 0
+let g:indentLine_char = '┆'
+
+" let g:indentLine_color_tty_light = 5  " (default: 4)
+let g:indentLine_color_tty_dark = 5 " (default: 2)
+
+" vim:ft=vim

@@ -2,6 +2,7 @@
 "------------------------
 
 let g:vitality_tmux_can_focus = 1
+set background=dark
 colorscheme solarized
 highlight MatchParen ctermfg=8 ctermbg=2 cterm=bold
 if has('gui_running')
