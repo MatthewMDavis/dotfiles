@@ -21,7 +21,7 @@ nnoremap <leader>sr :VimrcSearch<cr>
 " Do a / search first, then leave pattern empty in :s// to use previous
 nnoremap <Leader>sub :%s///g<left><left>
 vnoremap <Leader>sub :s///g<left><left>
-nnoremap <leader>wub :%s//<C-r><C-w>/g<cr>
+nnoremap <leader>tub :%s//<C-r><C-w>/g<cr>
 
 " Search for selected text, forwards or backwards.
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text

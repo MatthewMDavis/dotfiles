@@ -1,6 +1,6 @@
-"Assign to vim-tmux-runner for testing
+"Assign to neovim terminal for testing
 
-let test#strategy = "vtr"
+let test#strategy = "neovim"
 
 "Configure leader keys for vim-test plugin
 

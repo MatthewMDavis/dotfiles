@@ -1,0 +1,15 @@
+extends html
+
+snippet erbl "erb list" w
+<% ${1:things}.each do |$1| %>
+	${0: code here }
+<% end %>
+endsnippet
+
+snippet	erb "erb" w
+<% ${1:code} %>
+endsnippet
+
+snippet	erbe "erb eval" w
+<%= ${1:code} %>
+endsnippet

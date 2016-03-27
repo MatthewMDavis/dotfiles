@@ -1,10 +1,15 @@
 " Visual configurations
 "------------------------
 
-let g:vitality_tmux_can_focus = 1
 set background=dark
 colorscheme solarized
-highlight MatchParen ctermfg=8 ctermbg=2 cterm=bold
+highlight MatchParen ctermfg=8 ctermbg=2
+
+augroup parenMatch
+  au InsertEnter * :highlight MatchParen ctermfg=12 ctermbg=0
+  au InsertLeave * :highlight MatchParen ctermfg=8 ctermbg=2
+augroup END
+
 if has('gui_running')
     set guioptions-=r "Hide the right side scrollbar
     set guioptions-=L "Hide the left side scrollbar

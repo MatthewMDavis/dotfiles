@@ -19,7 +19,7 @@ let g:ctrlp_max_depth = 99
 let g:ctrlp_prompt_mappings = {
 \ 'MarkToOpen()':         ['<c-z>'],
 \ 'PrtExit()':            ['<esc>', '<c-c>', '<c-g>', '<C-@>', '<c-space>'],
-\ 'AcceptSelection("h")': ['<c-x>', '<c-cr>', '<c-s>', '<C-h>', '<C-CR>'],
+\ 'AcceptSelection("h")': ['<c-x>', '<c-cr>', '<c-s>', '<C-CR>', '<c-h>'],
 \ }
 
 function! s:CtrlpTargetedMapping(mapping, directory)
@@ -51,7 +51,7 @@ nnoremap <leader>cpt :CtrlPTag<cr>
 
 
 nnoremap <leader>cpu :CtrlPMRU<cr>
-nnoremap <leader>cpb :CtrlPBuffer<cr>
+nnoremap <leader>w :CtrlPBuffer<cr>
 
 nnoremap <leader>cpr :CtrlP =system('git rev-parse --show-toplevel')<cr><bs><cr>
 

@@ -18,6 +18,7 @@ endfunction
 
 "----------------------------------------------------------------
 
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 call plug#begin('~/.vim/plugged')
 
 " Scrip'tease - Plug for working with plugins
@@ -34,6 +35,10 @@ Plug 'tpope/vim-abolish'
 
 " Ack - Integrata ack (grep replacement) into vim
 Plug 'mileszs/ack.vim'
+
+" Airline - Statusline plugin
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Plugr - wrapper around bundler
 Plug 'tpope/vim-bundler'
@@ -60,7 +65,7 @@ Plug 'troydm/easybuffer.vim'
 Plug 'mattn/emmet-vim'
 
 " Endwise - Intelligently insert ends, endifs, etc
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 
 " vim-es6: snippets and syntax highlighting for ECMAScript6/ECMAScript2015
 Plug 'vim-scripts/vim-es6'
@@ -82,9 +87,6 @@ Plug 'Yggdroot/indentLine'
 
 " JSON - Syntax highlighting for JSON
 Plug 'elzr/vim-json'
-
-" KWBD - Close buffer while preserving window layout
-Plug 'rgarver/Kwbd.vim'
 
 " Entire (text obj) - Custom text object for the entire buffer
 Plug 'kana/vim-textobj-entire'
@@ -140,17 +142,11 @@ Plug 'christoomey/vim-system-copy'
 " VTR - Vim tmux integration
 Plug 'christoomey/vim-tmux-navigator'
 
-"Vim-Tmux-Runner - Vim tmux integration
-Plug 'christoomey/vim-tmux-runner'
-
 " Trailing-Whitespace - Provides a list of buffers for organization
 Plug 'bronson/vim-trailing-whitespace'
 
 " Unimpaired - Pairs of mappings thanks to tpope
 Plug 'tpope/vim-unimpaired'
-
-" Vim-Indent-Guides - Make it easier to find where you are in a nest of indent levels
-Plug 'nathanaelkane/vim-indent-guides'
 
 " vim-rake: configures vim path to allow file navigation of ruby gems
 Plug 'tpope/vim-rake'
@@ -168,15 +164,17 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-vinegar'
 
 " vitality makes things play nice with tmux
-Plug 'sjl/vitality.vim'
-
+if !has('nvim')
+  Plug 'sjl/vitality.vim'
+endif
 " YankStack: super-lightwt yankring implementation
 Plug 'maxbrunsfeld/vim-yankstack'
 
 " Completion functionality, unifying supertab, ultisnips, and YouCompleteMe
 " via http://stackoverflow.com/a/22253548/1626737
 
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
+Plug 'Valloric/YouCompleteMe'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 

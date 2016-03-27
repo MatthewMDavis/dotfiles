@@ -177,7 +177,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 " via http://stackoverflow.com/a/22253548/1626737
 
 Plug 'Valloric/YouCompleteMe'
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 

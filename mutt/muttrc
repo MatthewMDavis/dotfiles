@@ -1,0 +1,39 @@
+set from = 'mattmdavis@gmail.com'
+set realname = 'Matthew M Davis'
+
+
+# REMOTE FOLDERS (ON GMAIL SERVERS)
+set imap_user = 'mattmdavis@gmail.com'
+set imap_pass = 'sk00l-slab'
+
+set spoolfile = imaps://imap.gmail.com/INBOX
+set folder = imaps://imap.gmail.com/
+set record=""
+set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
+set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+set trash="imaps://imap.gmail.com/[Gmail]/Trash"
+
+# LOCAL FOLDERS FOR CACHED HEADERS AND CERTIFICATES
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+# SMTP SETTINGS
+set smtp_url = 'smtp://mattmdavis@smtp.gmail.com:587/'
+set smtp_pass = 'sk00l-slab' # use the same password as for IMAP
+
+# STABILIZING THE MUTT SESSION
+set move = no  #Stop asking to move read messages to mbox!
+set imap_keepalive = 900
+
+# GMAIL KEYBINDINGS
+bind editor <space> noop
+macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
+macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+
+# SOLARIZED COLORS
+source mutt-colors-solarized-dark-16.muttrc
