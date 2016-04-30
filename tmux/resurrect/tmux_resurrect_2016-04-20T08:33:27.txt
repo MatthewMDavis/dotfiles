@@ -1,0 +1,9 @@
+pane	Matt	1	:nvim	0	:#-	1	:/Users/Matt	1	nvim	:nvim /Users/Matt/bin/dotfiles/zsh/zshrc
+pane	Matt	2	:..ojects/rgblog	1	:*	1	:/Users/Matt/Projects/rgblog	1	zsh	:
+pane	rgblog	1	:..ojects/rgblog	1	:*	1	:/Users/Matt/Projects/rgblog	1	zsh	:
+pane	rgblog	1	:..ojects/rgblog	1	:*	2	:/Users/Matt/Projects/rgblog	0	ruby	:foreman: master    
+pane	rgblog	1	:..ojects/rgblog	1	:*	3	:/Users/Matt/Projects/rgblog	0	nvim	:nvim client/app/bundles/Comments/components/CommentsList.jsx
+window	Matt	1	0	:#-	ccfd,120x39,0,0,0
+window	Matt	2	1	:*	ccfe,120x39,0,0,1
+window	rgblog	1	1	:*	38b4,254x59,0,0{81x59,0,0[81x29,0,0,2,81x29,0,30,4],172x59,82,0,3}
+state	rgblog	Matt

@@ -1,30 +1,5 @@
 #
 # Executes commands at login pre-zshrc.
-
-#
-# Browser
-#
-
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
-fi
-
-#
-# Editors
-#
-export EDITOR=/usr/local/bin/vim
-export VISUAL=/usr/local/bin/vim
-export PAGER='less'
-
-#
-# Language
-#
-
-if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
-fi
-
-
 #
 # Less
 #
@@ -39,27 +14,11 @@ if (( $+commands[lesspipe.sh] )); then
   export LESSOPEN='| /usr/bin/env lesspipe.sh %s 2>&-'
 fi
 
-#
-# Temporary Files
-#
-
-if [[ ! -d "$TMPDIR" ]]; then
-  export TMPDIR="/tmp/$USER"
-  mkdir -p -m 700 "$TMPDIR"
-fi
-
-TMPPREFIX="${TMPDIR%/}/zsh"
-if [[ ! -d "$TMPPREFIX" ]]; then
-  mkdir -p "$TMPPREFIX"
-fi
 
 # RBENV/PYENV Initialization
 
 export RBENV_ROOT=/usr/local/var/rbenv
 export PYENV_ROOT=/usr/local/var/pyenv
-if [[ -z $TMUX ]]; then
- if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
- if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
- # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-fi
-# eval "$(docker-machine env default)"
+# if [[ -z $TMUX ]]; then
+ # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# fi

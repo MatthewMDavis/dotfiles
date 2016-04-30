@@ -1,0 +1,28 @@
+snippet jdes "JS test describe grp"
+describe('$1', () => {
+	it ('$2', () => {
+		expect$3
+	});
+});$0
+endsnippet
+
+snippet jit "JS test it statemt"
+it ('$1', () => {
+	expect$2
+});
+$0
+endsnippet
+
+snippet jbeach "JS test before each"
+beforeEach(() => {
+  $1
+});
+$0
+endsnippet
+
+snippet exprt "express route"
+${1:app}.${2:http_method}('${3:path}', function(req, res, next) {
+  $0
+});
+
+endsnippet

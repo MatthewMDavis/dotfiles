@@ -105,7 +105,7 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = /Users/Matt/.gitignore
+	excludesfile = ~/.gitignore_global
 [advice]
   statusHints = false
 [diff]

@@ -1,0 +1,20 @@
+pane	Matt	1	:..ux/ServerAuth	0	:-	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	zsh	:
+pane	Matt	2	:..ects/SlackOps	1	:*	1	:/Users/Matt/Projects/SlackOps	1	zsh	:
+pane	ServerAuth	1	:npm	0	:#-	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth	0	node	:npm   
+pane	ServerAuth	1	:npm	0	:#-	2	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	0	node	:npm   
+pane	ServerAuth	1	:npm	0	:#-	3	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	nvim	:nvim index.html
+pane	ServerAuth	2	:..ux/ServerAuth	0	:	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth	0	zsh	:
+pane	ServerAuth	2	:..ux/ServerAuth	0	:	2	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	zsh	:
+pane	ServerAuth	3	:..ux/ServerAuth	1	:*	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	zsh	:
+pane	SlackOps	1	:..ects/SlackOps	1	:*	1	:/Users/Matt/Projects/SlackOps	0	ruby	:foreman: master    
+pane	SlackOps	1	:..ects/SlackOps	1	:*	2	:/Users/Matt/Projects/SlackOps	0	zsh	:
+pane	SlackOps	1	:..ects/SlackOps	1	:*	3	:/Users/Matt/Projects/SlackOps	1	nvim	:nvim app/views/pages/about.html.md
+pane	SlackOps	2	:..ects/SlackOps	0	:-	1	:/Users/Matt/Projects/SlackOps	1	zsh	:
+window	Matt	1	0	:-	d3df,254x59,0,0,2
+window	Matt	2	1	:*	6a23,254x59,0,0,14
+window	ServerAuth	1	0	:#-	b05e,254x59,0,0{81x59,0,0[81x29,0,0,9,81x29,0,30,13],172x59,82,0,12}
+window	ServerAuth	2	0	:	9ef5,254x59,0,0{127x59,0,0,10,126x59,128,0,11}
+window	ServerAuth	3	1	:*	ea1f,254x59,0,0,20
+window	SlackOps	1	1	:*	6352,254x59,0,0{81x59,0,0[81x29,0,0,17,81x29,0,30,19],172x59,82,0,16}
+window	SlackOps	2	0	:-	6a27,254x59,0,0,18
+state	ServerAuth	SlackOps

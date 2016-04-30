@@ -1,0 +1,5 @@
+" NERDCommenter by scrooloose
+" Provide padding for better legibility
+let g:NERDSpaceDelims = 1
+
+" vim:ft=vim

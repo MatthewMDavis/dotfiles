@@ -40,11 +40,11 @@ function! CurrenRelativeDirectory()
 endfunction
 
 " Easy navigation for editing and cding
-nnoremap <Leader>rc :e $MYVIMRC
-nmap <Leader>ec :e ~/bin/
+nnoremap <Leader>rc :e $MYVIMRC<cr>
+nmap <Leader>eb :e ~/bin/
 nmap <Leader>eh :e ~/
 nmap <Leader>ew :CtrlP ~/wiki<cr>
-nmap <Leader>cd :cd ~/code/
+nmap <Leader>cd :cd ~/bin/
 nnoremap <leader>er :e <C-r>=escape(expand("%:p:h"), ' ')<cr>/
 nnoremap <leader>rr :r <C-r>=CurrenRelativeDirectory()<cr>
 nnoremap <leader>sav :sav <C-r>=escape(expand("%:p:h"), ' ')<cr>/

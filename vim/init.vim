@@ -3,8 +3,9 @@
 "=========================================================================== "
 " Author:        Matt Davis
 "---------------------------------------------------------------------
-
 " Want to set this before any others
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 let mapleader = "\<Space>"
 
 function! s:SourceConfigFilesIn(directory)
@@ -46,9 +47,6 @@ Plug 'tpope/vim-bundler'
 " Coffeescript - Syntax file and other support for Coffeescript
 Plug 'kchmck/vim-coffee-script'
 
-" Commentary - Motion aware commenting
-Plug 'tpope/vim-commentary'
-
 " Ctrlp - Vimscript fuzzy file opener
 Plug 'kien/ctrlp.vim'
 
@@ -65,7 +63,7 @@ Plug 'troydm/easybuffer.vim'
 Plug 'mattn/emmet-vim'
 
 " Endwise - Intelligently insert ends, endifs, etc
-" Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise'
 
 " vim-es6: snippets and syntax highlighting for ECMAScript6/ECMAScript2015
 Plug 'vim-scripts/vim-es6'
@@ -106,6 +104,9 @@ Plug 'vim-scripts/matchit.zip'
 " Mkdir - Mkdir for the current file before save
 Plug 'pbrisbin/vim-mkdir'
 
+" NERD Commenter
+Plug 'scrooloose/nerdcommenter'
+
 " Node - Support for `gf` file jumping on node requires
 Plug 'moll/vim-node'
 
@@ -114,6 +115,9 @@ Plug 'kurkale6ka/vim-pairs'
 
 " Allow automatic, and simple manual, toggling of relative/hybrid line numbering
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+
+" Session management
+Plug 'tpope/vim-obsession'
 
 " Rails.vim - Help for working with Rails projects in vim
 Plug 'tpope/vim-rails'
@@ -173,7 +177,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 " Completion functionality, unifying supertab, ultisnips, and YouCompleteMe
 " via http://stackoverflow.com/a/22253548/1626737
 
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 Plug 'Valloric/YouCompleteMe'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'

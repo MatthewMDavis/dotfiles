@@ -19,8 +19,8 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 " Supertab - enhanced tab behavior based on context
 "--------------------------------------------------
 
-" let g:SuperTabDefaultCompletionType    = '<C-n>'
-" let g:SuperTabCrMapping                = 0
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:SuperTabCrMapping                = 0
 
 "----------------------------------------
 " UltiSnips - Fancy snippet functionality
