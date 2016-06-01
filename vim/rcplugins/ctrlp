@@ -16,6 +16,7 @@ let g:ctrlp_mruf_default_order = 1
 let g:ctrlp_max_height = 15
 let g:ctrlp_max_files = 300
 let g:ctrlp_max_depth = 99
+let g:ctrlp_open_new_file = 'r'
 let g:ctrlp_prompt_mappings = {
 \ 'MarkToOpen()':         ['<c-z>'],
 \ 'PrtExit()':            ['<esc>', '<c-c>', '<c-g>', '<C-@>', '<c-space>'],

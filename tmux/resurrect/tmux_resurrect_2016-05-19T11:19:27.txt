@@ -1,0 +1,35 @@
+pane	ClientAuth	1	:..ux/ClientAuth	1	:*	1	:/Users/Matt/bin/AdvancedRedux/ClientAuth	0	zsh	:
+pane	ClientAuth	1	:..ux/ClientAuth	1	:*	2	:/Users/Matt/bin/AdvancedRedux/ClientAuth	0	zsh	:
+pane	ClientAuth	1	:..ux/ClientAuth	1	:*	3	:/Users/Matt/bin/AdvancedRedux/ClientAuth	1	nvim	:nvim src/index.js
+pane	ClientAuth	2	:..ux/ClientAuth	0	:-	1	:/Users/Matt/bin/AdvancedRedux/ClientAuth	1	zsh	:
+pane	ClientAuth	2	:..ux/ClientAuth	0	:-	2	:/Users/Matt/bin/AdvancedRedux/ClientAuth	0	zsh	:
+pane	FlashFlood	1	:..hello_phoenix	1	:*	1	:/Users/Matt/Projects/FlashFlood/FirstPhoenix/hello_phoenix	0	beam.smp	:/usr/local/Cellar/erlang/18.3/lib/erlang/erts-7.3/bin/beam.smp -- -root /usr/local/Cellar/erlang/18.3/lib/erlang -progname erl -- -home /Users/Matt -- -pa /usr/local/Cellar/elixir/1.2.4/bin/../lib/eex/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/elixir/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/ex_unit/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/iex/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/logger/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/mix/ebin -elixir ansi_enabled true -noshell -s elixir start_cli -extra /usr/local/bin/mix phoenix.server
+pane	FlashFlood	1	:..hello_phoenix	1	:*	2	:/Users/Matt/Projects/FlashFlood/LearnElixir	0	beam.smp	:/usr/local/Cellar/erlang/18.3/lib/erlang/erts-7.3/bin/beam.smp -- -root /usr/local/Cellar/erlang/18.3/lib/erlang -progname erl -- -home /Users/Matt -- -pa /usr/local/Cellar/elixir/1.2.4/bin/../lib/eex/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/elixir/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/ex_unit/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/iex/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/logger/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/mix/ebin -elixir ansi_enabled true -user Elixir.IEx.CLI -extra --no-halt --erl -user Elixir.IEx.CLI +iex
+pane	FlashFlood	1	:..hello_phoenix	1	:*	3	:/Users/Matt/Projects/FlashFlood/FirstPhoenix/hello_phoenix	1	zsh	:
+pane	FlashFlood	2	:nvim	0	:#-	1	:/Users/Matt/Projects/FlashFlood/FirstPhoenix/hello_phoenix	1	nvim	:nvim web/router.ex
+pane	Matt	1	:~	1	:*	1	:/Users/Matt	1	zsh	:
+pane	ServerAuth	1	:npm	1	:*	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	0	node	:npm   
+pane	ServerAuth	1	:npm	1	:*	2	:/Users/Matt/bin/AdvancedRedux/ServerAuth	0	zsh	:
+pane	ServerAuth	1	:npm	1	:*	3	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	nvim	:nvim index.html
+pane	ServerAuth	2	:..erAuth/server	0	:-	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	0	less	:less package.json
+pane	ServerAuth	2	:..erAuth/server	0	:-	2	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	1	zsh	:
+pane	ServerAuth	3	:mongod	0	:#	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	mongod	:mongod
+pane	SlackOps	1	:foreman	1	:*	1	:/Users/Matt/Projects/SlackOps	0	ruby	:foreman: master    
+pane	SlackOps	1	:foreman	1	:*	2	:/Users/Matt/Projects/SlackOps	0	zsh	:
+pane	SlackOps	1	:foreman	1	:*	3	:/Users/Matt/Projects/SlackOps	1	nvim	:nvim client/webpack.client.rails.config.js
+pane	SlackOps	2	:..ects/SlackOps	0	:-	1	:/Users/Matt/Projects/SlackOps	1	zsh	:
+pane	learnyounode	1	:../learnyounode	1	:*	1	:/Users/Matt/bin/learnyounode	0	zsh	:
+pane	learnyounode	1	:../learnyounode	1	:*	2	:/Users/Matt/bin/learnyounode	0	zsh	:
+pane	learnyounode	1	:../learnyounode	1	:*	3	:/Users/Matt/bin/learnyounode	1	nvim	:nvim .
+window	ClientAuth	1	1	:*	e342,254x59,0,0{81x59,0,0[81x29,0,0,21,81x29,0,30,23],172x59,82,0,22}
+window	ClientAuth	2	0	:-	1efa,254x59,0,0{127x59,0,0,24,126x59,128,0,25}
+window	FlashFlood	1	1	:*	be85,254x59,0,0{127x59,0,0,38,126x59,128,0[126x29,128,0,39,126x29,128,30,41]}
+window	FlashFlood	2	0	:#-	ea20,254x59,0,0,40
+window	Matt	1	1	:*	6a24,254x59,0,0,34
+window	ServerAuth	1	1	:*	b05e,254x59,0,0{81x59,0,0[81x29,0,0,9,81x29,0,30,13],172x59,82,0,12}
+window	ServerAuth	2	0	:-	9ef5,254x59,0,0{127x59,0,0,10,126x59,128,0,11}
+window	ServerAuth	3	0	:#	ea1f,254x59,0,0,20
+window	SlackOps	1	1	:*	6352,254x59,0,0{81x59,0,0[81x29,0,0,17,81x29,0,30,19],172x59,82,0,16}
+window	SlackOps	2	0	:-	6a27,254x59,0,0,18
+window	learnyounode	1	1	:*	6350,254x59,0,0{81x59,0,0[81x29,0,0,35,81x29,0,30,37],172x59,82,0,36}
+state	SlackOps	FlashFlood

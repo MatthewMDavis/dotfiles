@@ -44,9 +44,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Plugr - wrapper around bundler
 Plug 'tpope/vim-bundler'
 
-" Coffeescript - Syntax file and other support for Coffeescript
-Plug 'kchmck/vim-coffee-script'
-
 " Ctrlp - Vimscript fuzzy file opener
 Plug 'kien/ctrlp.vim'
 
@@ -58,6 +55,9 @@ Plug 'junegunn/vim-easy-align'
 
 " Easy Buffer - Buffer list
 Plug 'troydm/easybuffer.vim'
+
+" Elixir support
+Plug 'elixir-lang/vim-elixir'
 
 " Emmet - Text expansion for html markup
 Plug 'mattn/emmet-vim'

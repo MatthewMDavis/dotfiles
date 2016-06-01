@@ -28,7 +28,10 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode history)
 # time that oh-my-zsh is loaded.
 ZSH_THEME="pl9kfork/powerlevel9k"
 
-setopt auto_cd
+# Make oh-my-zsh upgrades purely a manual operation
+DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
+
 
 
 
@@ -65,9 +68,6 @@ ensure_tmux_is_running() {
 
 ensure_tmux_is_running
 
-# Tmuxinator
-source /usr/local/share/zsh/site-functions/_tmuxinator
-
 # Plugins to be loaded (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git bundler brew gem heroku thefuck rbenv pyenv sublime vi-mode)
@@ -97,6 +97,9 @@ function chpwd() {
     emulate -L zsh
     ls -a
 }
+
+# Enable cd without typing cd
+setopt auto_cd
 
 # Open files with quicklook using ql alias
 function ql() {

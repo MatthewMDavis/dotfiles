@@ -1,0 +1,35 @@
+pane	ClientAuth	1	:..ux/ClientAuth	1	:*	1	:/Users/Matt/bin/AdvancedRedux/ClientAuth	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ClientAuth	1	:..ux/ClientAuth	1	:*	2	:/Users/Matt/bin/AdvancedRedux/ClientAuth	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ClientAuth	1	:..ux/ClientAuth	1	:*	3	:/Users/Matt/bin/AdvancedRedux/ClientAuth	1	zsh	:
+pane	ClientAuth	2	:..ux/ClientAuth	0	:-	1	:/Users/Matt/bin/AdvancedRedux/ClientAuth	1	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ClientAuth	2	:..ux/ClientAuth	0	:-	2	:/Users/Matt/bin/AdvancedRedux/ClientAuth	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	FlashFlood	1	:nvim	1	:*	1	:/Users/Matt/Projects/FlashFlood/LearnElixir	1	nvim	:nvim first_steps/handle_open.exs
+pane	FlashFlood	1	:nvim	1	:*	2	:/Users/Matt/Projects/FlashFlood/LearnElixir	0	beam.smp	:/usr/local/Cellar/erlang/18.3/lib/erlang/erts-7.3/bin/beam.smp -- -root /usr/local/Cellar/erlang/18.3/lib/erlang -progname erl -- -home /Users/Matt -- -pa /usr/local/Cellar/elixir/1.2.4/bin/../lib/eex/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/elixir/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/ex_unit/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/iex/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/logger/ebin /usr/local/Cellar/elixir/1.2.4/bin/../lib/mix/ebin -elixir ansi_enabled true -user Elixir.IEx.CLI -extra --no-halt --erl -user Elixir.IEx.CLI +iex
+pane	FlashFlood	1	:nvim	1	:*	3	:/Users/Matt/Projects/FlashFlood/LearnElixir	0	zsh	:
+pane	FlashFlood	2	:..hello_phoenix	0	:#-	1	:/Users/Matt/Projects/FlashFlood/FirstPhoenix/hello_phoenix	1	zsh	:
+pane	Matt	1	:~	1	:*	1	:/Users/Matt	1	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ServerAuth	1	:..ux/ServerAuth	1	:*	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ServerAuth	1	:..ux/ServerAuth	1	:*	2	:/Users/Matt/bin/AdvancedRedux/ServerAuth	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ServerAuth	1	:..ux/ServerAuth	1	:*	3	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	zsh	:
+pane	ServerAuth	2	:..erAuth/server	0	:#-	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	0	zsh	:
+pane	ServerAuth	2	:..erAuth/server	0	:#-	2	:/Users/Matt/bin/AdvancedRedux/ServerAuth/server	1	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	ServerAuth	3	:mongod	0	:	1	:/Users/Matt/bin/AdvancedRedux/ServerAuth	1	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	SlackOps	1	:..ects/SlackOps	1	:*	1	:/Users/Matt/Projects/SlackOps	0	zsh	:
+pane	SlackOps	1	:..ects/SlackOps	1	:*	2	:/Users/Matt/Projects/SlackOps	1	zsh	:
+pane	SlackOps	1	:..ects/SlackOps	1	:*	3	:/Users/Matt/Projects/SlackOps	0	nvim	:nvim Gemfile
+pane	SlackOps	2	:..ects/SlackOps	0	:-	1	:/Users/Matt/Projects/SlackOps	1	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	learnyounode	1	:../learnyounode	1	:*	1	:/Users/Matt/bin/learnyounode	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	learnyounode	1	:../learnyounode	1	:*	2	:/Users/Matt/bin/learnyounode	0	zsh	:zsh -f /Users/Matt/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	learnyounode	1	:../learnyounode	1	:*	3	:/Users/Matt/bin/learnyounode	1	zsh	:
+window	ClientAuth	1	1	:*	4ee2,254x59,0,0{89x59,0,0[89x29,0,0,1,89x29,0,30,2],164x59,90,0,3}
+window	ClientAuth	2	0	:-	e4a6,254x59,0,0{127x59,0,0,4,126x59,128,0,5}
+window	FlashFlood	1	1	:*	f82f,254x59,0,0{127x59,0,0,6,126x59,128,0[126x29,128,0,7,126x29,128,30,8]}
+window	FlashFlood	2	0	:#-	d3e6,254x59,0,0,9
+window	Matt	1	1	:*	6a1f,254x59,0,0,10
+window	ServerAuth	1	1	:*	61da,254x59,0,0{89x59,0,0[89x29,0,0,11,89x29,0,30,12],164x59,90,0,13}
+window	ServerAuth	2	0	:#-	9ef9,254x59,0,0{127x59,0,0,14,126x59,128,0,15}
+window	ServerAuth	3	0	:	6a25,254x59,0,0,16
+window	SlackOps	1	1	:*	a1ea,254x59,0,0{89x59,0,0[89x29,0,0,17,89x29,0,30,24],164x59,90,0,19}
+window	SlackOps	2	0	:-	ea1f,254x59,0,0,20
+window	learnyounode	1	1	:*	e1db,254x59,0,0{89x59,0,0[89x29,0,0,21,89x29,0,30,22],164x59,90,0,23}
+state	FlashFlood	learnyounode
