@@ -44,6 +44,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Plugr - wrapper around bundler
 Plug 'tpope/vim-bundler'
 
+" Commentary - tim pope's comment plugin
+Plug 'tpope/vim-commentary'
+
 " Ctrlp - Vimscript fuzzy file opener
 Plug 'kien/ctrlp.vim'
 
@@ -103,9 +106,6 @@ Plug 'vim-scripts/matchit.zip'
 
 " Mkdir - Mkdir for the current file before save
 Plug 'pbrisbin/vim-mkdir'
-
-" NERD Commenter
-Plug 'scrooloose/nerdcommenter'
 
 " Node - Support for `gf` file jumping on node requires
 Plug 'moll/vim-node'
