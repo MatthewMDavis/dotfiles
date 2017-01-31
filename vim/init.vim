@@ -61,6 +61,7 @@ Plug 'troydm/easybuffer.vim'
 
 " Elixir support
 Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 " Emmet - Text expansion for html markup
 Plug 'mattn/emmet-vim'

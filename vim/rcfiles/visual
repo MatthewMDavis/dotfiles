@@ -59,6 +59,7 @@ set vb
 " Easy access to maximizing
 nnoremap <C-_> <C-w>_
 
+" new splits go on the bottom and right, not top and left
 set splitbelow
 set splitright
 
